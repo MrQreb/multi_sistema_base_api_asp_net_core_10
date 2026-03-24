@@ -11,7 +11,7 @@ using WepAPI.Src.WEP.Database;
 
 namespace WepAPI.Src.WEP.Database.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(WEPContext))]
     [Migration("20260323164321_InitialCreate")]
     partial class InitialCreate
     {

@@ -10,13 +10,13 @@ namespace WepAPI.Src.WEP.Modules.Users.Repositories
     /// </summary>
     public class UserRepository : IUserRepository
     {
-        private readonly AppDbContext _db;
+        private readonly WEPContext _db;
 
         /// <summary>
         /// Inicializa el repositorio con el DbContext.
         /// </summary>
         /// <param name="db">Contexto de base de datos.</param>
-        public UserRepository(AppDbContext db) => _db = db;
+        public UserRepository(WEPContext db) => _db = db;
 
         /// <summary>
         /// Obtiene todos los usuarios activos.

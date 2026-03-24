@@ -2,17 +2,17 @@
 dotnet watch run
 
 ### Crear migraciones
-dotnet ef migrations add ***NombreDeMigracion** --context AppDbContextAutenticacion --output-dir Migrations/Autenticacion
+dotnet ef migrations add ***NombreDeMigracion** --context WEPContextAutenticacion --output-dir Migrations/Autenticacion
 
 ### Actualizar la base de datos para reflejar la migración.
-dotnet ef database update --context AppDbContextAutenticacion
+dotnet ef database update --context WEPContextAutenticacion
  
 ### Borrrar la base de datps actual y aplicar todas las migraciones
-dotnet ef database drop --force --context AppDbContextMantenimiento
-dotnet ef database update --context AppDbContextMantenimiento
+dotnet ef database drop --force --context WEPContextMantenimiento
+dotnet ef database update --context WEPContextMantenimiento
  
 ### Aplicar una migracion por nombre
-dotnet ef database update 20250527182302_AdvertenciaNewFilds --context AppDbContextMantenimiento
+dotnet ef database update 20250527182302_AdvertenciaNewFilds --context WEPContextMantenimiento
 
 ### Acceder a la documentación con Swagger
 - Tener el modo de desarrollo en ***launchSettings.json***
@@ -26,16 +26,16 @@ dotnet ef dbcontext scaffold "Name=NombreConexion" Microsoft.EntityFrameworkCore
 dotnet ef dbcontext scaffold "Name=SAPConnection" Microsoft.EntityFrameworkCore.SqlServer -o TempModels -t NuevaTabla
 
 ## Eliminar ultima migración sin aplicar 
-dotnet ef migrations remove --context AppDbContextNombreContexto
+dotnet ef migrations remove --context WEPContextNombreContexto
 
 ## Lista de migraciones 
-dotnet ef migrations list --context AppDbContextAutenticacion  
+dotnet ef migrations list --context WEPContextAutenticacion  
 
 ## Eliminar migracion con nombre
-dotnet ef migrations remove --context AppDbContextNombreContexto
+dotnet ef migrations remove --context WEPContextNombreContexto
 
 ## Volver a una migracion
-dotnet ef database update 20250728180715_CargoAreaTableAdded --context AppDbContextAutenticacion
+dotnet ef database update 20250728180715_CargoAreaTableAdded --context WEPContextAutenticacion
 
 ## Librerias usadas en el proyecto
 

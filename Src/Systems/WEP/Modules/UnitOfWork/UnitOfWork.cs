@@ -3,17 +3,17 @@ using WepAPI.Src.WEP.Database;
 namespace WepAPI.Src.WEP.Modules.UnitOfWork;
 
 /// <summary>
-/// Implementación de la unidad de trabajo usando AppDbContext.
+/// Implementación de la unidad de trabajo usando WEPContext.
 /// </summary>
 public class UnitOfWork : IUnitOfWork
 {
-    private readonly AppDbContext _context;
+    private readonly WEPContext _context;
 
     /// <summary>
     /// Inicializa una nueva instancia de UnitOfWork.
     /// </summary>
     /// <param name="context">Contexto de base de datos.</param>
-    public UnitOfWork(AppDbContext context)
+    public UnitOfWork(WEPContext context)
     {
         _context = context;
     }

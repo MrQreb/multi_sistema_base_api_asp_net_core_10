@@ -10,8 +10,8 @@ using WepAPI.Src.WEP.Database;
 
 namespace WepAPI.Src.WEP.Database.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(WEPContext))]
+    partial class WEPContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

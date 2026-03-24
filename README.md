@@ -64,7 +64,7 @@ dotnet build
 
 4 - Hacer la migración 
 ```
-dotnet ef database update --context AppDbContext
+dotnet ef database update --context WEPContext
 ```
 
 5 - Levantar el proyecto

@@ -18,7 +18,7 @@ public static class DatabaseConfiguration
         IConfiguration configuration
     )
     {
-        services.AddDbContext<AppDbContext>(options =>
+        services.AddDbContext<WEPContext>(options =>
             options.UseSqlServer(
                 configuration.GetConnectionString("DefaultConnection"),
                 sqlOptions =>

@@ -7,8 +7,8 @@ namespace WepAPI.Src.WEP.Database;
 /// <summary>
 /// Contexto de base de datos que representa las tablas de la aplicación.
 /// </summary>
-/// <typeparam name="AppDbContext"></typeparam>
-public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+/// <typeparam name="WEPContext"></typeparam>
+public class WEPContext(DbContextOptions<WEPContext> options) : DbContext(options)
 {
 
     /// <summary>
