@@ -16,20 +16,22 @@ namespace WepAPI.Src.WEP.Config
         /// <returns>La colección de servicios con OpenAPI configurado.</returns>
         public static IServiceCollection AddOpenApiConfiguration(this IServiceCollection services)
         {
-            //Configuracion de open api de open api para las version 1
+
+            //Configuracion de prefijos de sistema de app tags
             services.AddOpenApi("app-tags-v1", options =>
              {
-                options.AddDocumentTransformer((doc, ctx, ct) =>
-                {
-                    doc.Info = new OpenApiInfo
-                    {
-                        Title = "App Tags API V1",
-                        Version = "app-tags-v1",
-                    };
-                    return Task.CompletedTask;
-                });
-            });
+                 options.AddDocumentTransformer((doc, ctx, ct) =>
+                 {
+                     doc.Info = new OpenApiInfo
+                     {
+                         Title = "App Tags API V1",
+                         Version = "app-tags-v1",
+                     };
+                     return Task.CompletedTask;
+                 });
+             });
 
+            //Configuracion de prefijos de sistema de app wep
             services.AddOpenApi("wep-v1", options =>
             {
                 options.AddDocumentTransformer((doc, ctx, ct) =>
@@ -43,6 +45,8 @@ namespace WepAPI.Src.WEP.Config
                 });
             });
 
+
+            //Configuracion de prefijos de sistema de app wep v2
             services.AddOpenApi("wep-v2", options =>
             {
                 options.AddDocumentTransformer((doc, ctx, ct) =>

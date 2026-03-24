@@ -3,11 +3,13 @@ using WepAPI.Src.WEP.Modules.Users.Dtos;
 
 namespace WepAPI.Src.WEP.Modules.Users;
 
-[ApiController]
-[ApiVersion("1.0")]
-[Route("api/wep/v{version:apiVersion}/users")]
-[ApiExplorerSettings(GroupName = "wep-v1")]
-[Tags("Users V1 -  Prefijo 1")]
+[ApiController] 
+
+[ApiVersion("1.0")] // Version del controlador 
+[Route("api/wep/v{version:apiVersion}/users")] // Prefijo, nombre sistema, version de api y nombre controlador
+[ApiExplorerSettings(GroupName = "wep-v1")] // Para agruparlo en documentacion interactiva
+[Tags("Users V1 -  Prefijo 1")] // Nombre de la sub carpeta en documentacion
+
 
 public class UsersController : ControllerBase
 {

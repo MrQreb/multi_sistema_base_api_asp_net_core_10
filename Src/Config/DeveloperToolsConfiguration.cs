@@ -32,8 +32,9 @@ namespace WepAPI.Src.WEP.Config
                         .ShowOperationId()
                         .WithOpenApiRoutePattern("/openapi/{documentName}.json")
 
-                        .AddDocument("app-tags-v1")
-                        .AddDocument("wep-v1", isDefault: true)
+                        //Anadir documentos a xml
+                        .AddDocument("app-tags-v1", isDefault: true)
+                        .AddDocument("wep-v1")
                         .AddDocument("wep-v2");
                 });
             }
