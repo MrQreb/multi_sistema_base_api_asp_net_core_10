@@ -17,34 +17,46 @@ namespace WepAPI.Src.WEP.Config
         public static IServiceCollection AddOpenApiConfiguration(this IServiceCollection services)
         {
             //Configuracion de open api de open api para las version 1
-            services.AddOpenApi("v1", options =>
-            {
+            services.AddOpenApi("app-tags-v1", options =>
+             {
                 options.AddDocumentTransformer((doc, ctx, ct) =>
                 {
                     doc.Info = new OpenApiInfo
                     {
-                        Title = "Mi API Version 1",
-                        Version = "v1",
+                        Title = "App Tags API V1",
+                        Version = "app-tags-v1",
                     };
                     return Task.CompletedTask;
                 });
             });
 
-            //Configuracion de open api de open api para las version 1
-            services.AddOpenApi("v2", options =>
+            services.AddOpenApi("wep-v1", options =>
             {
                 options.AddDocumentTransformer((doc, ctx, ct) =>
                 {
                     doc.Info = new OpenApiInfo
                     {
-                        Title = "Mi API Version 2",
-                        Version = "v2",
+                        Title = "WEP API V1",
+                        Version = "wep-v1",
                     };
                     return Task.CompletedTask;
                 });
             });
 
-        return services;
+            services.AddOpenApi("wep-v2", options =>
+            {
+                options.AddDocumentTransformer((doc, ctx, ct) =>
+                {
+                    doc.Info = new OpenApiInfo
+                    {
+                        Title = "WEP API V2",
+                        Version = "wep-v2",
+                    };
+                    return Task.CompletedTask;
+                });
+            });
+
+            return services;
         }
 
         /// <summary>

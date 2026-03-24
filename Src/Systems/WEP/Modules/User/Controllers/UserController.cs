@@ -5,8 +5,9 @@ namespace WepAPI.Src.WEP.Modules.Users;
 
 [ApiController]
 [ApiVersion("1.0")]
-[Route("api/v{version:apiVersion}/users")] 
-[Tags("Users V1")]
+[Route("api/wep/v{version:apiVersion}/users")]
+[ApiExplorerSettings(GroupName = "wep-v1")]
+[Tags("Users V1 -  Prefijo 1")]
 
 public class UsersController : ControllerBase
 {
