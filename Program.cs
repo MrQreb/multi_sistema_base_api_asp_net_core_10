@@ -1,5 +1,5 @@
 using WepAPI.Src;
-using WepAPI.Src.Config;
+using WepAPI.Src.WEP.Config;
 
 namespace WepAPI;
 

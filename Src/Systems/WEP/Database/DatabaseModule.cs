@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace WepAPI.Src.Database;
+namespace WepAPI.Src.WEP.Database;
 
 /// <summary>
 /// Configuración de la base de datos y su registro en el contenedor de servicios.

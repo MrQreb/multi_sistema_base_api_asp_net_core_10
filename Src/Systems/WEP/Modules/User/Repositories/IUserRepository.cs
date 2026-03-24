@@ -1,6 +1,6 @@
-using WepAPI.Src.Modules.Users.Entities;
+using WepAPI.Src.WEP.Modules.Users.Entities;
 
-namespace WepAPI.Src.Modules.Users.Repositories;
+namespace WepAPI.Src.WEP.Modules.Users.Repositories;
 
 /// <summary>
 /// Define las operaciones de acceso a datos para la entidad User.

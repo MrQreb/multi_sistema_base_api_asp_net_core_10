@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace WepAPI.Src.Database.Migrations
+namespace WepAPI.Src.WEP.Database.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

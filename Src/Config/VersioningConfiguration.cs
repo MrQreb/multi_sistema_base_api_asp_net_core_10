@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 
-namespace WepAPI.Src.Config
+namespace WepAPI.Src.WEP.Config
 {
     /// <summary>
     /// Proporciona métodos de extensión para configurar el versionado de la API.

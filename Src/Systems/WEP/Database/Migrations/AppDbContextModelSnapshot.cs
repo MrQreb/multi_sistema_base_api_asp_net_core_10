@@ -3,20 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WepAPI.Src.Database;
+using WepAPI.Src.WEP.Database;
 
 #nullable disable
 
-namespace WepAPI.Src.Database.Migrations
+namespace WepAPI.Src.WEP.Database.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260323164321_InitialCreate")]
-    partial class InitialCreate
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,7 +22,7 @@ namespace WepAPI.Src.Database.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WepAPI.Src.Modules.Users.Entities.User", b =>
+            modelBuilder.Entity("WepAPI.Src.WEP.Modules.Users.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

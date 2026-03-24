@@ -1,6 +1,6 @@
-using WepAPI.Src.Database;
+using WepAPI.Src.WEP.Database;
 
-namespace WepAPI.Src.Modules.UnitOfWork;
+namespace WepAPI.Src.WEP.Modules.UnitOfWork;
 
 /// <summary>
 /// Implementación de la unidad de trabajo usando AppDbContext.

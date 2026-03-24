@@ -1,18 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using WepAPI.Src.Modules.Users.Dtos;
+using WepAPI.Src.WEP.Modules.Users.Dtos;
 
-namespace WepAPI.Src.Modules.Users;
+namespace WepAPI.Src.WEP.Modules.Users;
 
 [ApiController]
-[ApiVersion("2.0")]
-[Route("api/v{version:apiVersion}/users")]
-[Tags("Users V2")]
+[ApiVersion("1.0")]
+[Route("api/v{version:apiVersion}/users")] 
+[Tags("Users V1")]
 
-public class UsersControllerV2 : ControllerBase
+public class UsersController : ControllerBase
 {
     private readonly UsersService _usersService;
 
-    public UsersControllerV2(UsersService usersService)
+    public UsersController(UsersService usersService)
     {
         _usersService = usersService;
     }

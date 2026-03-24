@@ -1,4 +1,4 @@
-namespace WepAPI.Src.Modules.Users.Entities;
+namespace WepAPI.Src.WEP.Modules.Users.Entities;
 
 public class User
 {

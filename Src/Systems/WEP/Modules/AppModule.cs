@@ -1,6 +1,6 @@
-using WepAPI.Src.Database;
-using WepAPI.Src.Modules.UnitOfWork;
-using WepAPI.Src.Modules.Users;
+using WepAPI.Src.WEP.Database;
+using WepAPI.Src.WEP.Modules.UnitOfWork;
+using WepAPI.Src.WEP.Modules.Users;
 
 namespace WepAPI.Src;
 

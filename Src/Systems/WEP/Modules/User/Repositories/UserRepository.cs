@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using WepAPI.Src.Database;
-using WepAPI.Src.Modules.Users.Entities;
+using WepAPI.Src.WEP.Database;
+using WepAPI.Src.WEP.Modules.Users.Entities;
 
-namespace WepAPI.Src.Modules.Users.Repositories
+namespace WepAPI.Src.WEP.Modules.Users.Repositories
 {
     /// <summary>
     /// Repositorio para la entidad User usando Entity Framework.

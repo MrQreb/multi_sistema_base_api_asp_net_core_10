@@ -1,8 +1,8 @@
-using WepAPI.Src.Modules.Users.Dtos;
-using WepAPI.Src.Modules.Users.Entities;
-using WepAPI.Src.Modules.Users.Repositories;
+using WepAPI.Src.WEP.Modules.Users.Dtos;
+using WepAPI.Src.WEP.Modules.Users.Entities;
+using WepAPI.Src.WEP.Modules.Users.Repositories;
 
-namespace WepAPI.Src.Modules.Users
+namespace WepAPI.Src.WEP.Modules.Users
 {
     /// <summary>
     /// Contiene la lógica de negocio para la gestión de usuarios.

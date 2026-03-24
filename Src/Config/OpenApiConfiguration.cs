@@ -1,6 +1,6 @@
 using Microsoft.OpenApi;
 
-namespace WepAPI.Src.Config
+namespace WepAPI.Src.WEP.Config
 {
 
     /// <summary>

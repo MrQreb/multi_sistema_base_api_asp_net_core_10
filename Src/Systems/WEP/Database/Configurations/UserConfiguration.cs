@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using WepAPI.Src.Modules.Users.Entities;
+using WepAPI.Src.WEP.Modules.Users.Entities;
 
-namespace WepAPI.Src.Database.Configurations;
+namespace WepAPI.Src.WEP.WEP.Database.Configurations;
 
 
 

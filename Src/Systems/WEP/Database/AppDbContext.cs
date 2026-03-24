@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using WepAPI.Src.Modules.Users.Entities;
+using WepAPI.Src.WEP.Modules.Users.Entities;
 
-namespace WepAPI.Src.Database;
+namespace WepAPI.Src.WEP.Database;
 
 /// <summary>
 /// Contexto de base de datos que representa las tablas de la aplicación.

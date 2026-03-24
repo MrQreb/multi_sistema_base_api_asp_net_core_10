@@ -1,4 +1,4 @@
-namespace WepAPI.Src.Modules.UnitOfWork;
+namespace WepAPI.Src.WEP.Modules.UnitOfWork;
 
 /// <summary>
 /// Define una unidad de trabajo para manejar transacciones en la base de datos.

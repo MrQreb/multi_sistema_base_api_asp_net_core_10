@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace WepAPI.Src.Modules.Users.Dtos;
+namespace WepAPI.Src.WEP.Modules.Users.Dtos;
 
 public class UpdateUserDto
 {

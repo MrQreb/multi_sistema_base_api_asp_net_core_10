@@ -1,6 +1,6 @@
-using WepAPI.Src.Modules.Users.Repositories;
+using WepAPI.Src.WEP.Modules.Users.Repositories;
 
-namespace WepAPI.Src.Modules.Users;
+namespace WepAPI.Src.WEP.Modules.Users;
 
 
 /// <summary>

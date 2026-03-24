@@ -1,4 +1,4 @@
-namespace WepAPI.Src.Modules.UnitOfWork;
+namespace WepAPI.Src.WEP.Modules.UnitOfWork;
 
 /// <summary>
 /// Extensiones para registrar los servicios del módulo UnitOfWork.

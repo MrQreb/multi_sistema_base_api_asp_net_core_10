@@ -1,6 +1,6 @@
-using WepAPI.Src.Modules.Users.Entities;
+using WepAPI.Src.WEP.Modules.Users.Entities;
 
-namespace WepAPI.Src.Modules.Users.Dtos;
+namespace WepAPI.Src.WEP.Modules.Users.Dtos;
 
 public class UserResponseDto
 {

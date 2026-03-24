@@ -1,6 +1,6 @@
 using Scalar.AspNetCore;
 
-namespace WepAPI.Src.Config
+namespace WepAPI.Src.WEP.Config
 {
     /// <summary>
     /// Configura herramientas de desarrollo para la aplicación web.
